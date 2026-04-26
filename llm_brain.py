@@ -1,7 +1,7 @@
 import requests
 from config import MODEL
 
-OLLAMA_URL = "http://91.107.203.23:11434/api/chat"
+OLLAMA_URL = "http://localhost:11434/api/chat"
 
 def llm_decide(latency):
 
