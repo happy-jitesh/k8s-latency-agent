@@ -6,7 +6,7 @@ from config import *
 
 def get_latency():
 
-    query = 'histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))'
+    query = 'histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[1m]))'
 
     result = query_prometheus(query)
 
