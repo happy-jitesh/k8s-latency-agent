@@ -36,7 +36,7 @@ Build an **AI Agent** that:
 
 ---
 
-# 🏗 Architecture (Mermaid)
+# 🏗 Architecture
 
 ```mermaid
 flowchart TD
@@ -117,16 +117,17 @@ kubectl create namespace prod
 
 # 🚀 4️⃣ Deploy Latency App
 
-kubectl apply -f k8s/latency-app.yaml
-
+```bash
+kubectl apply -f kubernetes/latency-app.yaml
+```
 # 🚀 5️⃣ Create Service
-
-kubectl apply -f service.yaml
-
-# 🚀 6️⃣ Add ServiceMonitor (IMPORTANT 🔥)
-
-kubectl apply -f servicemonitor.yaml
-
+```bash
+kubectl apply -f kubernetes/service.yaml
+```
+# 🚀 6️⃣ Add ServiceMonitor
+```bash
+kubectl apply -f kubernetes/servicemonitor.yaml
+```
 
 # 🚀 7️⃣ Install dependencies
 ```bash
@@ -134,8 +135,6 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip3 install kubernetes requests
 ```
-
-
 
 # 🚀 8️⃣ Start AI Agent 
 
