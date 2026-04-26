@@ -1,0 +1,13 @@
+PROMETHEUS_URL = "http://127.0.0.1:9090/"
+
+NAMESPACE = "prod"
+DEPLOYMENT_NAME = "latency-app"
+
+MODEL = "llama3"
+
+LATENCY_THRESHOLD = 0.5   # seconds
+
+CHECK_INTERVAL = 15
+
+MAX_REPLICAS = 6
+SCALE_REPLICAS = 4
