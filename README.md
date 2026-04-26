@@ -161,7 +161,7 @@ Inside:
 
 ```bash
 while true; do
-  for i in $(seq 1 200); do
+  for i in $(seq 1 50); do
     curl -s http://latency-app/delay/1 > /dev/null &
   done
   wait
